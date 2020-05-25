@@ -1,2 +1,2 @@
-# first_repo
-this is my first repositary at spiced
+# training_repo
+this is my training repositary
