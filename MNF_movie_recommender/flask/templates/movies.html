@@ -1,0 +1,35 @@
+{% extends '_base.html' %}
+
+  {% block content %}
+
+  <h1>Please enter your {{ num_html }} favorite movies!</h1>
+                <!-- ^^Jinja template^^ -->
+
+  <form action="/results">
+    <p>Please rate the following {{ num_html }} movies:</p>
+      <!-- <select name = "movie1" required>
+        {% for each in movies_html %}
+      <option value="{{each}}" {% if each == "movies_list"%} selected {% endif %}>{{each}}</option>
+        {% endfor %}
+      <input type="text" name="rating1" placeholder="0.0 - 5.0" required> -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+        <input type="text" name="movie1" placeholder="movie title" required>
+        <input type="text" name="rating1" placeholder="0.0 - 5.0" required>
+        </div>
+        <div class="col">
+        <input type="text" name="movie2" placeholder="movie title" required>
+        <input type="text" name="rating2" placeholder="0.0 - 5.0" required>
+        </div>
+        <div class="col">
+        <input type="text" name="movie3" placeholder="movie title" required>
+        <input type="text" name="rating3" placeholder="0.0 - 5.0" required>
+        </div>
+        <br>
+        <input type="submit" value="Submit yo moviez">
+        <br>
+  </form>
+
+{% endblock %}
